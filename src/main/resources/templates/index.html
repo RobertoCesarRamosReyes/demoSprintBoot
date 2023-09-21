@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${titulo}"></title>
+</head>
+<body>
+    <h1 th:text="${saludo}"></h1>
+    <div th:if="${show}">
+        Contenido del div
+    </div>
+    <div th:if="${series}!=null">
+        <h2>Mis series</h2>
+        <ul th:each="serie : ${series}">
+            <li th:text="${serie}"></li>
+        </ul>
+    </div>
+</body>
+</html>
