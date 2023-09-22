@@ -10,5 +10,10 @@
     <h1 th:text="${nombre}"></h1>
     El parámetro es: <span style="color: #A961B5" th:text="${parametro}"></span>
 </div>
+<div th:if="${jugador!=null}">
+    <h2>Parametro recibido por Path</h2>
+    El jugador es: <span th:text="${jugador.nombre}"></span>
+    Numero: <span th:text="${jugador.numero}"></span>
+</div>
 </body>
 </html>
